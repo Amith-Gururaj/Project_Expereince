@@ -1,0 +1,33 @@
+Domain Overview:
+
+	Ernstwhile TTH and after the segregattion its named under the vertical Health, so we were Building the Application on HIPPA guidelines
+	I was into the Digital Engineering Stream, where we bring the Digital Integration to the domains specific needs
+	
+Client Brief:
+	
+	US based NGO named AAMC it an centralized Organization for all the Medical Collages out there in 
+US and European unions
+	They had an application to serve the End Users (Faculties, Students, Administaration and Entities)
+	
+	Exisitng Tech: ColdFusion Technology with the on-premises database
+	Challenges : Outdated Tech with Scalability Challenges on adding the future services 
+		and Difficulty in Maintaining on - prim database
+	Solution : Modrenizing the Application with Java Spring boot Tech and Angular Tech stack and having
+		the Cloud Database services
+		
+Roles and Responsibilties:
+ 
+	we had an dedicated teams for specific layers of Application development (Angular, Java Spring boot, PostgreSQL, AWS)
+	I was into the Backend Development wherein we develop an Java Restful API's using the Spring boot Framework
+	we designed an Microservices based architecture to distribute our services into manageable units 
+		(search & Add/Edit operations, Report Generation, Bulk Upload, Ref Manage)
+		
+Challenges faced:
+
+	1) Challenges with matching the SLA's with the report generation which involves both backend and database involvement
+		Solution: Added Indexes from the Database whereever required and Refactored the Queries by removing unnecessary joins and making meaningful connections between tables
+		and using the views
+		
+	2) Bulk Mainpulations of Data and handling the whole process within SLA with all the Validations and subsequent operation with DB
+		Solution: Globalized the DB calls rather than keeing it in loops, as the DB calls are performance painpoint, 
+		bought the operation of parallel streams on independent operations, rather making multiple save calls we used Map and made a single DB call for save for multiple rows 
