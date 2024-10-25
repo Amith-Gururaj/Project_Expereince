@@ -1,0 +1,76 @@
+Project Overview
+----------------
+
+	Domain Overview
+	
+		The project arose from Ernstwhile TTH’s reorganization, resulting in a dedicated vertical for Health. 
+		Our primary goal was to develop a comprehensive application compliant with HIPAA guidelines, which mandate stringent protections for sensitive health information. As a member of the Digital Engineering Stream, my focus was on facilitating digital integration to address the specific needs of the healthcare domain, ensuring that our solutions were not only innovative but also aligned with regulatory requirements.
+
+	Client Brief
+	
+		The client, AAMC (American Association of Medical Colleges), serves as a centralized organization for medical colleges in the United States 
+		and the European Union. Their existing application catered to a wide array of users, including faculty, students, administrative staff, and 
+		various educational entities. However, the legacy system faced numerous challenges:
+
+		Outdated Technology: Built on ColdFusion, the application struggled to scale and adapt to new requirements, limiting its ability to incorporate future services effectively.
+			Maintenance Difficulties: The reliance on an on-premises database made maintenance cumbersome, complicating updates and increasing operational risks.
+			To overcome these obstacles, we proposed a modernization strategy, transitioning to a more agile and robust technology stack featuring Java Spring Boot and Angular, while leveraging cloud database services to enhance scalability and maintainability.
+
+	Roles and Responsibilities
+	
+		Our development team was segmented into specialized units focusing on different layers of the application, including:
+
+			Frontend Development: Utilizing Angular to create a responsive and user-friendly interface.
+			Backend Development: Building RESTful APIs with Java Spring Boot to facilitate smooth communication between the front end and the database.
+			Database Management: Implementing PostgreSQL for efficient data handling.
+			Cloud Services: Employing AWS to host our services and improve scalability.
+		
+		In my role focused on backend development, I was responsible for designing and implementing microservices that segmented our application into manageable components, such as:
+
+			Search and Add/Edit Operations: Enabling users to interact with the database efficiently.
+			Report Generation: Streamlining the process of generating user-specific reports.
+			Bulk Upload: Facilitating the uploading of large datasets seamlessly.
+			Reference Management: Maintaining relationships between data entities effectively.
+			
+	Challenges Faced
+		1. SLA Compliance in Report Generation
+			One of the most significant challenges was ensuring compliance with Service Level Agreements (SLAs) for report generation, which required intensive backend processing and complex database interactions.
+
+			Solution: To optimize our reporting functionality, we:
+				Implemented Database Indexing: By adding indexes where necessary, we significantly reduced query execution times.
+				Refactored Complex Queries: We eliminated unnecessary joins and focused on meaningful relationships between tables, resulting in more efficient data retrieval.
+				Utilized Database Views: This allowed for simplified access to complex datasets, improving overall performance.
+				
+		2. Bulk Data Manipulation
+			Managing bulk data manipulations posed another challenge, particularly with respect to validating data and executing operations within the required SLAs.
+
+			Solution: To address these issues:
+				Globalized Database Calls: We minimized the performance impact of individual requests by consolidating multiple database interactions into single calls.
+				Adopted Parallel Processing: Implementing parallel streams for independent operations allowed us to handle bulk operations more efficiently.
+				Consolidated Save Operations: By using a single database call for multiple rows, we reduced the transaction overhead significantly.
+					
+		3. User Authentication and Access Control
+			As we migrated to a new system, ensuring secure user authentication and robust access control mechanisms became paramount.
+
+			Challenge: The legacy system's authentication methods were inadequate, exposing vulnerabilities and complicating user management.
+
+			Solution: We implemented OAuth2 for secure token-based authentication, ensuring that user access was not only secure but also flexible. This facilitated role-based access control, allowing different user types (students, faculty, administrators) to access only the resources pertinent to their roles.
+
+		4. Integration with Legacy Systems
+			Integrating the new application with existing legacy systems presented additional hurdles, particularly concerning data consistency and interoperability.
+
+			Challenge: The disparate data formats and APIs of the legacy systems posed significant risks of data loss and discrepancies.
+
+			Solution: We developed a middleware layer that acted as an intermediary, ensuring seamless data exchange between the new application and legacy systems. This approach helped maintain data integrity while allowing for gradual phasing out of outdated technologies.
+
+		5. Performance Optimization Under Load
+			As the application was deployed, we faced challenges related to performance under high user load, especially during peak usage times.
+
+			Challenge: The system’s responsiveness began to degrade, risking user satisfaction and operational efficiency.
+
+			Solution: We conducted thorough performance testing and identified bottlenecks. By optimizing our API endpoints, employing caching strategies, and scaling our cloud resources dynamically, we ensured that the application remained responsive even under heavy load.
+
+	Conclusion
+		Through the comprehensive modernization of the AAMC application, we aimed to enhance scalability, maintainability, and user experience while adhering to HIPAA guidelines. 
+		The strategic implementation of contemporary technologies and architectural patterns not only resolved existing challenges but also laid a solid foundation for a more robust, future-proof application. 
+		This project exemplifies our commitment to innovation in healthcare technology, paving the way for improved educational outcomes in medical institutions.
