@@ -1,76 +1,91 @@
 Project Overview
 ----------------
 
-	Domain Overview
+	Client and Domain Overview
 	
-		The project arose from Ernstwhile TTH’s reorganization, resulting in a dedicated vertical for Health. 
-		Our primary goal was to develop a comprehensive application compliant with HIPAA guidelines, which mandate stringent protections for sensitive health information. As a member of the Digital Engineering Stream, my focus was on facilitating digital integration to address the specific needs of the healthcare domain, ensuring that our solutions were not only innovative but also aligned with regulatory requirements.
+		I had worked with AAMC (Association of American Medical Colleges) based of a Health Domain, 
+		It is a not-for-profit association, where they leads and serves the academic medicine community in the United States and the European Union. 
+		Catered to a wide array of users, including faculty, administrative staff, and various educational entities(academic and research). 
 
-	Client Brief
+	Project Overview
 	
-		The client, AAMC (American Association of Medical Colleges), serves as a centralized organization for medical colleges in the United States 
-		and the European Union. Their existing application catered to a wide array of users, including faculty, students, administrative staff, and 
-		various educational entities. However, the legacy system faced numerous challenges:
+		We developed a comprehensive web-based application for managing Faculty Rosters, which centralizes and organizes critical information about 
+		faculty members. 
+		The application serves as a dynamic tool for storing and accessing personal details, ongoing appointments, and professional history, 
+		
+		including:
 
-		Outdated Technology: Built on ColdFusion, the application struggled to scale and adapt to new requirements, limiting its ability to incorporate future services effectively.
-			Maintenance Difficulties: The reliance on an on-premises database made maintenance cumbersome, complicating updates and increasing operational risks.
-			To overcome these obstacles, we proposed a modernization strategy, transitioning to a more agile and robust technology stack featuring Java Spring Boot and Angular, while leveraging cloud database services to enhance scalability and maintainability.
-
+			Biographical information
+			Educational background
+			Race and ethnicity data
+			Previous employment history
+		
 	Roles and Responsibilities
 	
-		Our development team was segmented into specialized units focusing on different layers of the application, including:
+		As a Java Developer, my primary responsibility was designing and implementing microservices to modularize the application, 
+		ensuring scalability, maintainability, and efficient performance. Key areas of focus included:
 
-			Frontend Development: Utilizing Angular to create a responsive and user-friendly interface.
-			Backend Development: Building RESTful APIs with Java Spring Boot to facilitate smooth communication between the front end and the database.
-			Database Management: Implementing PostgreSQL for efficient data handling.
-			Cloud Services: Employing AWS to host our services and improve scalability.
-		
-		In my role focused on backend development, I was responsible for designing and implementing microservices that segmented our application into manageable components, such as:
-
-			Search and Add/Edit Operations: Enabling users to interact with the database efficiently.
-			Report Generation: Streamlining the process of generating user-specific reports.
-			Bulk Upload: Facilitating the uploading of large datasets seamlessly.
-			Reference Management: Maintaining relationships between data entities effectively.
+		Search and Add/Edit Operations: Developed microservices to enable users to interact with the database efficiently, 
+			ensuring quick and reliable retrieval and modification of data.
+		Report Generation: Streamlined the report generation process, allowing users to easily create and 
+			customize reports based on specific criteria and data sets.
+		Bulk Upload: Implemented a robust solution for bulk data uploads, optimizing the process of importing large datasets 
+			seamlessly without compromising system performance.
+		Reference Management: Managed the relationships between various data entities, ensuring data integrity and 
+			consistency across the application.
 			
 	Challenges Faced
-		1. SLA Compliance in Report Generation
-			One of the most significant challenges was ensuring compliance with Service Level Agreements (SLAs) for report generation, which required intensive backend processing and complex database interactions.
+	
+	Sprint 1: SLA Compliance in Report Generation
+		Challenge:
+			One of the major hurdles we encountered was ensuring compliance with Service Level Agreements (SLAs) for report generation. 
+		The process required intensive backend computations and complex database interactions, leading to performance bottlenecks.
 
-			Solution: To optimize our reporting functionality, we:
-				Implemented Database Indexing: By adding indexes where necessary, we significantly reduced query execution times.
-				Refactored Complex Queries: We eliminated unnecessary joins and focused on meaningful relationships between tables, resulting in more efficient data retrieval.
-				Utilized Database Views: This allowed for simplified access to complex datasets, improving overall performance.
-				
-		2. Bulk Data Manipulation
-			Managing bulk data manipulations posed another challenge, particularly with respect to validating data and executing operations within the required SLAs.
+		Solution:
+			Database Indexing: Introduced targeted indexes, which significantly reduced query execution times, enhancing retrieval speed.
+			Refactoring Complex Queries: Simplified complex SQL queries by removing unnecessary joins and optimizing table relationships, 
+				improving data retrieval efficiency.
+			Utilized Database Views: Created database views for frequently accessed datasets, allowing for more straightforward and 
+				faster access to complex data.
+		
+	Sprint 2: Bulk Data Manipulation
+		Challenge:
+			Handling bulk data operations, such as uploads and validations, was challenging due to the sheer volume 
+		of data and the need to meet stringent SLAs.
 
-			Solution: To address these issues:
-				Globalized Database Calls: We minimized the performance impact of individual requests by consolidating multiple database interactions into single calls.
-				Adopted Parallel Processing: Implementing parallel streams for independent operations allowed us to handle bulk operations more efficiently.
-				Consolidated Save Operations: By using a single database call for multiple rows, we reduced the transaction overhead significantly.
-					
-		3. User Authentication and Access Control
-			As we migrated to a new system, ensuring secure user authentication and robust access control mechanisms became paramount.
+		Solution:
+			Globalized Database Calls: Reduced overhead by consolidating multiple requests into single database calls, minimizing performance impact.
+			Parallel Processing: Leveraged parallel streams to process independent operations concurrently, significantly speeding up bulk data handling.
+			Consolidated Save Operations: Optimized save operations by bundling multiple rows into a single database transaction, 
+				which reduced transaction overhead and improved efficiency.
 
-			Challenge: The legacy system's authentication methods were inadequate, exposing vulnerabilities and complicating user management.
+	Sprint 3: Faculty Appointments Management
+		Challenge:
+			Managing faculty appointments was complex due to the need to ensure accurate data handling across multiple roles and 
+		academic sessions, with varying appointment details and timelines.
 
-			Solution: We implemented OAuth2 for secure token-based authentication, ensuring that user access was not only secure but also flexible. This facilitated role-based access control, allowing different user types (students, faculty, administrators) to access only the resources pertinent to their roles.
+		Solution:
+			Designed modular microservices that allowed dynamic management of faculty appointments.
+			Introduced automated workflows for appointment creation, updating, and expiration, ensuring data consistency.
+			Implemented validation rules to ensure that appointments adhered to predefined criteria, minimizing human error.
+			
+	Sprint 4: Reference Datasets Download
+		Challenge:
+			Providing users with seamless access to reference datasets while maintaining system performance 
+		was a key challenge, especially when dealing with large data sets that needed to be downloaded and processed.
 
-		4. Integration with Legacy Systems
-			Integrating the new application with existing legacy systems presented additional hurdles, particularly concerning data consistency and interoperability.
+		Solution:
+			We optimized the extraction process to reduce unnecessary data processing during downloads.
+			Asynchronous Data Retrieval: Enabled asynchronous data retrieval to ensure that users could continue interacting with the 
+				application while datasets were being prepared in the background.
 
-			Challenge: The disparate data formats and APIs of the legacy systems posed significant risks of data loss and discrepancies.
+	Sprint 5: Add/Edit Faculty Details
+		Challenge:
+			Allowing users to add or edit faculty details without compromising data integrity posed a significant challenge, 
+		particularly with respect to handling complex data relationships and ensuring consistency.
 
-			Solution: We developed a middleware layer that acted as an intermediary, ensuring seamless data exchange between the new application and legacy systems. This approach helped maintain data integrity while allowing for gradual phasing out of outdated technologies.
-
-		5. Performance Optimization Under Load
-			As the application was deployed, we faced challenges related to performance under high user load, especially during peak usage times.
-
-			Challenge: The system’s responsiveness began to degrade, risking user satisfaction and operational efficiency.
-
-			Solution: We conducted thorough performance testing and identified bottlenecks. By optimizing our API endpoints, employing caching strategies, and scaling our cloud resources dynamically, we ensured that the application remained responsive even under heavy load.
-
-	Conclusion
-		Through the comprehensive modernization of the AAMC application, we aimed to enhance scalability, maintainability, and user experience while adhering to HIPAA guidelines. 
-		The strategic implementation of contemporary technologies and architectural patterns not only resolved existing challenges but also laid a solid foundation for a more robust, future-proof application. 
-		This project exemplifies our commitment to innovation in healthcare technology, paving the way for improved educational outcomes in medical institutions.
+		Solution:
+			Incorporated real-time validation to ensure data accuracy. for users to input and update faculty information.
+			Version Control: Implemented versioning for faculty records to track changes and allow rollback in case of errors.
+			Data Integrity Constraints: Applied strict database constraints and triggers to ensure that edits were consistent with 
+				business rules, preventing invalid data from being saved.
