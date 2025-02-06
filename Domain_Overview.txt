@@ -1,0 +1,86 @@
+Speech: The Role of IT in Healthcare - Focus on Faculty Roster Application
+
+Introduction:
+
+Good [morning/afternoon], everyone!
+
+---------Intro adn brief of the content I am gonna talk
+
+It is a great honor to be here today to discuss the vital intersection of Information Technology (IT) and healthcare. 
+I’ve had the privilege of working in the IT sector for 3 years within a Health Domain with Educational Institute named AAMC, 
+where I was involved with developing and managing key solutions such as the Faculty Roster application. 
+As we know, healthcare is an incredibly dynamic and critical domain that is constantly evolving, and IT is at the heart of this 
+transformation. 
+Today, I’ll walk you through the big picture of IT in healthcare, explain the role of IT in healthcare education, and 
+specifically highlight how the Faculty Roster application plays a pivotal role at AAMC.
+Health Insurance Portability and Accountability Act
+
+propharma -- an largest RCO and HIMSS
+All while assruing complaince with the latest industry regulations.
+
+------------Explaining about the Healthcare
+
+Big Picture: The Role of IT in Healthcare
+
+To begin, let’s take a step back and understand the broader context. Healthcare, as a sector, has always been reliant on complex 
+systems, networks, and data. However, over the past few decades, IT has become not just an enabler but a fundamental pillar in 
+improving both patient care and operational efficiencies.
+
+The role of IT in healthcare has expanded significantly, from the digitization of patient records through Electronic Health Records 
+(EHRs) to the utilization of telemedicine for remote consultations. With the rise of Big Data, AI, and machine learning, healthcare 
+providers now have access to powerful tools that help in diagnosing diseases, predicting patient outcomes, and personalizing 
+treatment plans.
+
+In healthcare institutions, IT systems are indispensable for streamlining operations, managing human resources, and ensuring that 
+educational and clinical services are efficient and effective. The ability to collect, analyze, and act on data is essential for 
+making informed decisions, and advancing research and education in health institutions.
+
+----------------Concept note on expereince
+
+The Concept: Faculty Roster Application at AAMC
+
+Now, let’s focus on a specific IT solution that I had the opportunity to work with during my time at AAMC—the Faculty Roster 
+application.
+
+In any healthcare educational institution, especially one like AAMC, effective management of faculty is crucial. 
+Faculty members are the backbone of any educational institution—they are the ones who shape the future of healthcare by training and
+mentoring the next generation of doctors, nurses, and healthcare administrators. But managing the schedules, courses, and 
+assignments of a large and diverse group of faculty can be a logistical challenge.
+
+This is where the Faculty Roster application comes into play. 
+It helps in optimizing the scheduling process, ensuring that faculty members are not overburdened, and that their time is allocated 
+efficiently across various departments and activities.
+
+We developed a comprehensive web-based application for managing Faculty Rosters, which centralizes and organizes critical 
+information about faculty members. 
+The application serves as a dynamic tool for storing and accessing personal details, ongoing appointments, and professional history, 
+		
+including:
+
+	Biographical information
+	Educational background
+	Race and ethnicity data
+	Previous employment history
+
+------------- other areas
+	
+Beyond the Faculty Roster application, IT plays a transformative role in healthcare education. 
+It helps streamline processes, enhance learning, and improve collaboration. Here are some ways IT impacts healthcare education:
+
+E-Learning and Remote Education
+Simulation and Virtual Reality (VR)
+Data Analytics in Education
+Global Collaboration and Research
+
+----------- conclusion
+
+Conclusion:
+
+In conclusion, the role of IT in healthcare education is vast and indispensable. At AAMC, the Faculty Roster application is a prime 
+example of how IT can streamline operations, improve efficiency, and enhance the educational experience for both faculty and students. 
+As technology continues to evolve, we can expect even greater advancements in how we educate and train healthcare professionals.
+
+By embracing IT, healthcare education institutions can not only improve internal operations but also ensure that future healthcare 
+professionals are well-equipped to meet the challenges of modern medicine.
+
+Thank you for your time, and I look forward to any questions you may have.

@@ -3,7 +3,7 @@ Project Overview
 
 	Client and Domain Overview
 	
-		I had worked with AAMC (Association of American Medical Colleges) based of a Health Domain, 
+		I started my journey with AAMC (Association of American Medical Colleges) based of a Health Domain, 
 		It is a not-for-profit association, where they leads and serves the academic medicine community in the United States and the European Union. 
 		Catered to a wide array of users, including faculty, administrative staff, and various educational entities(academic and research). 
 
@@ -22,8 +22,8 @@ Project Overview
 		
 	Roles and Responsibilities
 	
-		As a Java Developer, my primary responsibility was designing and implementing microservices to modularize the application, 
-		ensuring scalability, maintainability, and efficient performance. Key areas of focus included:
+		As a Java Developer, my primary responsibility was designing and implementing restful webservices with microservices to modularize the application, 
+		ensuring scalability, maintainability, and efficient performance. and to build a seamless flow between frontend and datbase. Key areas of focus included:
 
 		Search and Add/Edit Operations: Developed microservices to enable users to interact with the database efficiently, 
 			ensuring quick and reliable retrieval and modification of data.
